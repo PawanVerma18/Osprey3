@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Osprey3.Views.EditUserPage"
+             BackgroundColor="#1A1A1A">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- Background Image -->
+            <Image Source="landscape.jpeg" 
+                   Aspect="AspectFill"
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+            <!-- Main Content -->
+            <ScrollView AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Opacity="0.9">
+                <StackLayout Padding="20" Spacing="30">
+                    <!-- Title -->
+                    <Label Text="Edit User"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="#F5CB86"/>
+
+                    <!-- Edit Form -->
+                    <Frame BackgroundColor="#F5CB86" CornerRadius="10" Padding="15" HasShadow="True">
+                        <StackLayout Spacing="20">
+                            <Entry Placeholder="Name"
+                                   Text="{Binding Name}"
+                                   TextColor="#1A1A1A"
+                                   PlaceholderColor="#1A1A1A"
+                                   BackgroundColor="#F5CB86"/>
+
+                            <Entry Placeholder="Email"
+                                   Text="{Binding Email}"
+                                   TextColor="#1A1A1A"
+                                   PlaceholderColor="#1A1A1A"
+                                   Keyboard="Email"
+                                   BackgroundColor="#F5CB86"/>
+
+                            <Entry Placeholder="New Password (optional)"
+                                   IsPassword="True"
+                                   TextColor="#1A1A1A"
+                                   PlaceholderColor="#1A1A1A"
+                                   BackgroundColor="#F5CB86"/>
+
+                            <Button Text="Save Changes"
+                                    BackgroundColor="#1A1A1A"
+                                    TextColor="White"
+                                    CornerRadius="5"
+                                    FontAttributes="Bold"
+                                    Clicked="OnSaveChangesClicked"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

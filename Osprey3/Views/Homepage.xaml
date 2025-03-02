@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Osprey3.Views.Homepage"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- Background Image with Overlay -->
+            <Image Source="landscape.jpeg"
+                   Aspect="AspectFill"
+                   Opacity="0.7"
+                   AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                   AbsoluteLayout.LayoutFlags="All" />
+
+            <!-- Scrollable Content -->
+            <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Padding="20" Spacing="20">
+
+                    <Image Source="ospery.png"
+                           Aspect="AspectFit"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="BUILDING THE MOST POWERFUL NETWORK OF WOMEN IN SPORT AND ENTERTAINMENT"
+                           FontSize="26"
+                           TextColor="White"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           Padding="10" />
+
+                    <!-- Enhanced 3x3 Grid -->
+                    <Grid Padding="10" RowSpacing="15" ColumnSpacing="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Image Blocks with Shadows -->
+                        <Frame Grid.Row="0" Grid.Column="0" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img1.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img2.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="2" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img3.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="0" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img4.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="1" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img5.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="2" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img6.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="0" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img7.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="1" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img8.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                        <Frame Grid.Row="2" Grid.Column="2" Padding="0" HasShadow="True" CornerRadius="10" BackgroundColor="#333">
+                            <Image Source="img9.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+                        </Frame>
+                    </Grid>
+
+                    <!-- Key Stats Section -->
+                    <StackLayout Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="A Nest of 100+ high profile members and growing."
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#8B8000"
+                               HorizontalTextAlignment="Center"
+                               Margin="0,10,0,10" />
+
+                        <BoxView HeightRequest="2" BackgroundColor="#8B8000" WidthRequest="200" HorizontalOptions="Center" />
+
+                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Text="20+ Olympic Medals" FontSize="14" TextColor="#8B8000" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="1" Text="7+ Emmys and Grammys" FontSize="14" TextColor="#8B8000" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="2" Text="17 Million + Followers" FontSize="14" TextColor="#8B8000" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="3" Text="25+ World Champions" FontSize="14" TextColor="#8B8000" HorizontalTextAlignment="Center" />
+                        </Grid>
+                    </StackLayout>
+                    <BoxView HeightRequest="4" BackgroundColor="White" WidthRequest="800" HorizontalOptions="Center" />
+
+                    <!-- THE PROBLEM Section -->
+                    <StackLayout Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="THE PROBLEM"
+                               FontSize="30"
+                               FontAttributes="Bold"
+                               TextColor="#8B8000"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Less than 1% of women in sports and entertainment can maintain a career based purely on their talent."
+                               FontSize="16"
+                               TextColor="White"
+                               HorizontalTextAlignment="Start"
+                               Margin="10,0,10,15" />
+                        <Label Text="Women in these sectors are vocalizing their need and desire for connection and community."
+                                 FontSize="16"
+                                  TextColor="White"
+                                    HorizontalTextAlignment="Start"
+                                    Margin="10,5,10,15" />
+                    </StackLayout>
+
+                    <!-- Four Cards Section -->
+                    <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame Grid.Row="0" Grid.Column="0" Padding="10" HasShadow="True" CornerRadius="10" BackgroundColor="#444">
+                            <StackLayout>
+                                <Label Text="THE FOCUS IS ONLY ON TOP 1%" FontSize="16" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="Osprey’s is the other 99" FontSize="14" TextColor="#F5CB86" />
+                                <Image Source="card1.jpeg" Aspect="AspectFill" HeightRequest="100" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="0" Grid.Column="1" Padding="10" HasShadow="True" CornerRadius="10" BackgroundColor="#444">
+                            <StackLayout>
+                                <Label Text="LACK LEVERAGE AND
+CONNECTIONS" FontSize="16" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="We network
+internationally and
+outside the box" FontSize="14" TextColor="#F5CB86" />
+                                <Image Source="card2.jpeg" Aspect="AspectFill" HeightRequest="100" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="0" Padding="10" HasShadow="True" CornerRadius="10" BackgroundColor="#444">
+                            <StackLayout>
+                                <Label Text="A LOT OF ONE-
+DIMENSIONAL
+
+THINKING" FontSize="16" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="The Osprey Nest is
+versatile and well
+connected" FontSize="14" TextColor="#F5CB86" />
+                                <Image Source="card3.jpeg" Aspect="AspectFill" HeightRequest="100" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1" Grid.Column="1" Padding="10" HasShadow="True" CornerRadius="10" BackgroundColor="#444">
+                            <StackLayout>
+                                <Label Text="AGENTS/MANAGE
+RS/COMPANIES
+OVER PROMISE AND
+UNDER DELIVER" FontSize="16" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="We partner with brands
+that know our members
+worth!" FontSize="14" TextColor="#F5CB86" />
+                                <Image Source="card4.jpeg" Aspect="AspectFill" HeightRequest="100" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                    <BoxView HeightRequest="4" BackgroundColor="White" WidthRequest="800" HorizontalOptions="Center" />
+                    <!-- OUR MEMBERS Header -->
+                    <Frame BackgroundColor="#444" CornerRadius="15" Padding="20" HasShadow="True">
+                        <StackLayout>
+                            <Label Text="OUR MEMBERS" 
+               FontSize="26" 
+               TextColor="White" 
+               FontAttributes="Bold" 
+               HorizontalTextAlignment="Center" 
+               Padding="10" />
+
+                            <!-- Layout for Talent and Executives -->
+                            <Grid Padding="10" RowSpacing="15" ColumnSpacing="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Talent Section on Left -->
+                                <StackLayout Grid.Column="0" Padding="10" HorizontalOptions="FillAndExpand">
+                                    <Label Text="TALENT:" 
+                       FontSize="18" TextColor="White" 
+                       HorizontalTextAlignment="Start" />
+                                    <Label Text="A few of our incredible members...." 
+FontSize="18" TextColor="White" 
+HorizontalTextAlignment="Start" Margin="0,10" />
+                                    <StackLayout Padding="10">
+                                        <Label Text="• Caroline Collins" TextColor="White" />
+                                        <Label Text="  News Anchor (2M Subs)" TextColor="White" />
+                                        
+                                        <Label Text="• Troy Mullins" TextColor="White" />
+                                        <Label Text="  LIV GOLF presenter" TextColor="White" />
+
+                                        <Label Text="• Pippa Mann" TextColor="White" />
+                                        <Label Text="  7 X Indy 500 Race car driver" TextColor="White" />
+
+                                        <Label Text="• DJ L3XI " TextColor="White" />
+                                        <Label Text="  Recording Artist" TextColor="White" />
+
+                                        <Label Text="• Julia Marino" TextColor="White" />
+                                        <Label Text="  Olympic Snowboarder" TextColor="White" />
+
+                                        <Label Text="• Cat Osterman" TextColor="White" />
+                                        <Label Text="  USA Softball/Olympian" TextColor="White" />
+
+                                        <Label Text="• Janaisa Morandin" TextColor="White" />
+                                        <Label Text="  MMA" TextColor="White" />
+
+                                        <Label Text="• Laura Wilkinson" TextColor="White" />
+                                        <Label Text="  Olympic Diver" TextColor="White" />
+
+                                        <Label Text="• DR Jen Welter" TextColor="White" />
+                                        <Label Text="  First Female NFL coach" TextColor="White" />
+
+                                        <Label Text="• Morgan Stickney" TextColor="White" />
+                                        <Label Text="  Paralympian" TextColor="White" />
+
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <!-- Executives Section on Right -->
+                                <StackLayout Grid.Column="1" Padding="10" HorizontalOptions="FillAndExpand">
+                                    <Label Text="EXECUTIVES: A few of our incredible members...." 
+                       FontSize="18" TextColor="White" 
+                       HorizontalTextAlignment="Start" Margin="0,10" />
+                                    <StackLayout Padding="10">
+                                        <Label Text="• Jenna Kurath" TextColor="White" />
+                                        <Label Text="  Comcast/NBC - VP" TextColor="White" />
+
+                                        <Label Text="• Meghan Chayka" TextColor="White" />
+                                        <Label Text="  Analyst/Stathletes" TextColor="White" />
+
+                                        <Label Text="• Emily Staker" TextColor="White" />
+                                        <Label Text="  NFL Agent/Lawyer" TextColor="White" />
+
+                                        <Label Text="• Nicole Middendorf" TextColor="White" />
+                                        <Label Text="  Financial Advisor" TextColor="White" />
+
+                                        <Label Text="• Kate Foley" TextColor="White" />
+                                        <Label Text="  NBA Agent (Epic)" TextColor="White" />
+
+                                        <Label Text="• Rachel Segal" TextColor="White" />
+                                        <Label Text="  NHL/PWHL" TextColor="White" />
+
+                                        <Label Text="• Amy Siegfried" TextColor="White" />
+                                        <Label Text="  Sports Entrepreneur" TextColor="White" />
+
+                                        <Label Text="• Suzanne Richardson" TextColor="White" />
+                                        <Label Text="  Entertainment Events" TextColor="White" />
+
+                                        <Label Text="• Vanessa Lambert " TextColor="White" />
+                                        <Label Text="  Bally Sports" TextColor="White" />
+
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <!-- Contact Section -->
+                    <Frame BackgroundColor="#444" CornerRadius="15" Padding="20" HasShadow="True">
+                        <StackLayout>
+                            <Label Text="CONTACT"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalTextAlignment="Center" />
+
+                            <Label Text="LYDIA DAVIES\n281-753-5630\nLYDIA@JOINOSPREY.COM\nWWW.JOINOSPREY.COM"
+                FontSize="16"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                Margin="10,5,10,10" />
+
+                            <Label Text="ELEVATE. REDEFINE. SOAR."
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#F5CB86"
+                HorizontalTextAlignment="Center" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
